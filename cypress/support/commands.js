@@ -37,6 +37,7 @@ Cypress.Commands.add('register', ({ name, email, password, passwordConfirmation 
   cy.contains(/create account/i).should('be.visible').click()
 })
 
+
 Cypress.Commands.add('login', ({ email, password }) => {
   cy.visitLogin()
   fillLoginForm({ email, password })
